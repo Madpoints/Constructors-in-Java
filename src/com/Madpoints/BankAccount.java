@@ -19,6 +19,10 @@ public class BankAccount {
         this.phoneNumber = phoneNumber;
     }
 
+    public BankAccount(String acctName, String email, String phoneNumber) {
+       this("1234567", 100.55, acctName, email, phoneNumber);
+    }
+
     // Get and Set account number
     public void setAcctNumber(String acctNumber) {
         this.acctNumber = acctNumber;
