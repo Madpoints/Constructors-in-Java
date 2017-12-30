@@ -4,11 +4,21 @@ public class Main {
 
     public static void main(String[] args) {
 
-    	VipCustomer vip = new VipCustomer("James", "james@email.com", 1300.00);
+    	VipCustomer vip1 = new VipCustomer("James", "james@email.com", 1300.00);
+		VipCustomer vip2 = new VipCustomer("Rachel", "rachel@email.com");
+		VipCustomer vip3 = new VipCustomer();
 
-		System.out.println(vip.getName());
-		System.out.println(vip.getEmail());
-		System.out.println(String.format("%.2f", vip.getCreditLimit()));
+		System.out.println(vip1.getName());
+		System.out.println(vip1.getEmail());
+		System.out.println(String.format("%.2f\n", vip1.getCreditLimit()));
+
+		System.out.println(vip2.getName());
+		System.out.println(vip2.getEmail());
+		System.out.println(String.format("%.2f\n", vip2.getCreditLimit()));
+
+		System.out.println(vip3.getName());
+		System.out.println(vip3.getEmail());
+		System.out.println(String.format("%.2f", vip3.getCreditLimit()));
 
 
 //    	BankAccount account = new BankAccount("2143658709", 27_653,"John", "email@thisemail.com", "555-555-5555");
